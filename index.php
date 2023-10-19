@@ -67,6 +67,11 @@
     <style>#toast-container{top:auto;right:auto;bottom:5%;left:10%}</style>
   </head>
   <body background="<?php echo $bg_img; ?>">
+
+
+  <h1>Bonjour noah</h1>
+
+
     <div class="container <?php echo $materialize_text_color; ?>-text">
       <div class="section hide-on-med-and-down"><br><br><br><br>
         <div class="row">
@@ -74,9 +79,7 @@
             <div class="card-panel hoverable <?php echo $materialize_card_color; ?> waves-effect waves-block waves-<?php echo $materialize_waves_color; ?> bigEntrance">
               <h4 class="center-align bigEntrance"><i class="material-icons mi-valign">dns</i>&nbsp;<?php echo $serverName; ?><h4><br>
               <div class="carousel bigEntrance" style="height: 200px;">
-                <?php $i = 0; foreach(glob('img/carousel/*.{jpg,png}', GLOB_BRACE) as $image): $i++; ?>
-                  <a class="carousel-item" href="#<?php echo $i; ?>!"><img src="<?php echo $image; ?>"></a>
-                <?php endforeach; ?>
+                
               </div>
               <ul id="info" class="bigEntrance" style="font-size:18px">
                 <li>&nbsp;&nbsp;&nbsp;<i class="material-icons mi-valign">my_location</i>&nbsp;&nbsp;&nbsp;<b>Map:</b>&nbsp;<?php echo $mapname; ?></li>
